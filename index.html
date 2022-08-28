@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="app.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4>Calculadora de edad</h4>
+                </div>
+
+                <div id="edad"></div>
+
+        <!--Inicio Bloque de ingreso del dia de nacimiento-->
+                <div class="bloque">
+                    <p class="titulo">Dia</p>
+                    <input
+                        type="texto"
+                        name="date"
+                        id="date"
+                        placeholder="dd"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                        />      
+                </div>
+        <!--Fin de Bloque de ingreso del dia de nacimiento-->
+
+        <!--Inicio Bloque de ingreso del mes de nacimiento-->
+                <div class="bloque">
+                    <p class="titulo">Mes</p>
+                    <input
+                        type="texto"
+                        name="month"
+                        id="month"
+                        placeholder="mm"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                        />
+                </div>
+        <!--Fin Bloque de ingreso del mes de nacimiento-->
+
+        <!--Inicio Bloque de ingreso del año de nacimiento-->
+                <div class="bloque">
+                    <p class="titulo">Año</p>
+                    <input
+                        type="texto"
+                        name="year"
+                        id="year"
+                        placeholder="aaaa"
+                        required="required"
+                        minlength="4"
+                        maxlength="4"
+                        />
+                </div>
+        <!--Fin Bloque de ingreso del mes de nacimiento-->
+            </div>
+        <!--Fin del Bloque de ingreso de los datos -->
+
+            <div class="base">
+                <div class="enter">
+                    <input
+                    type="boton"
+                    name="calcular"
+                    value="Calcular"
+                    onclick="edad()"
+                    />
+                </div>
+            </div>
+           
+        </form>
+    </div>
+</body>
+</html>
