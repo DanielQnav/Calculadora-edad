@@ -23,6 +23,6 @@ function edad(){
 
         if (y => 65){
         document.getElementById("edad").innerHTML =
-            "Tu edad es " + y + " Años " + m + " meses " + d + " días";
+            `Tu edad es ${y} Años ${m} meses ${d} días`;
     }
 }
