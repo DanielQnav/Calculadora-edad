@@ -21,8 +21,7 @@ function edad(){
         var m = m2 - m1;
         var y = y2 - y1;
 
-        if (y => 65){
         document.getElementById("edad").innerHTML =
             `Tu edad es ${y} Años ${m} meses ${d} días`;
-    }
+    
 }
